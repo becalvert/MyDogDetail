@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:47395",
+      "sslPort": 44371
+    }
+  },
+  "profiles": {
+    "MyDogDetail": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:7215;http://localhost:5215",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+        "commandName": "Docker",
+        "launchBrowser": true,
+        "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+        "publishAllPorts": true,
+        "environmentVariables": {
+            "ASPNETCORE_URLS": "https://+:443;http://+:80",
+            "ASPNETCORE_HTTPS_PORT": "44360",
+            "ConnectionStrings:DefaultConnection": "Data Source=host.docker.internal;Initial Catalog=PetInformation;UserID=Test;Password=test123"
+        },
+        "useSSL": true
+    }
+  }
+}
